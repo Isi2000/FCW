@@ -31,15 +31,15 @@ The FCW model consists of a series of connected particles (chains) moving on a g
 
 Before estimating mobility under different conditions, it's necessary to analyze the phenomena of locking, which can be of two kinds: mutual locking and self-locking.
 
-- **Mutual Locking:** Occurs when two chains block each other's heads (Figure \ref{fig:mutual_locking}).
-- **Self-Locking:** A locked state occurs when a single chain turns on itself, blocking all nearest neighbors of its head (Figure \ref{fig:self_locking}). This can only occur for chain lengths $\geq 8`.
+- **Mutual Locking:** Occurs when two chains block each other's heads.
+- **Self-Locking:** A locked state occurs when a single chain turns on itself, blocking all nearest neighbors of its head (Figure \ref{fig:self_locking}). This can only occur for chain lengths > 7.
 
 These configurations are trap states; once the chains get into this configuration, they can never change, permanently decreasing mobility for future time steps.
 
 <p align="center">
    <img src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" width="400" height="400" />
 
-   <img src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" width="400" height="400" />
+   <img src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" width="400" height="400" />
 </p>
 The quantity of interest for these simulations is the mobility after a long time $M_{\infty}$ as a function of the density $\rho$, defined as the number of spots occupied by chains over the total number of squares on the grid. $M_{\infty}$ measures how many particles are clustered during an indefinite evolution of the system.
 
