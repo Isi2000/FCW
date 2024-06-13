@@ -4,12 +4,7 @@ This repository contains a Python implementation of the Flexible Chain-like Walk
 
 ## Description of the model
 
-At its core, the model consists of a series of connected particles that resem-
-ble a chain. The movement of the walker is initiated by the head, which navigates the
-grid moving in free adjacent spots with equal probability. As the head moves, the parti-
-cles behind it, representing the body, maintaining their relative positions to one another
-while following the motion
-
+At its core, the model consists of a series of connected particles that resemble a chain. The movement of the walker is initiated by the head, which navigates the grid moving in free adjacent spots with equal probability. As the head moves, the particles behind it, representing the body, maintain their relative positions to one another while following the motion.
 
 ## Features
 
@@ -25,14 +20,14 @@ The FCW model consists of a series of connected particles (chains) moving on a g
 
 ### Key Concepts
 
-- **Mobility M(t):** The ratio of chains able to move at time $t$. $M(\bar{t}) = 1$ for a time step $\bar{t}$ means that each chain has at least one free spot near it and will perform a step. Clustering arises when chains cannot move and are bound to a cluster. Measuring mobility provides insights into the clustering properties of the system.
+- **Mobility $M(t)$:** The ratio of chains able to move at time $t$. $M(\bar{t}) = 1$ for a time step $\bar{t}$ means that each chain has at least one free spot near it and will perform a step. Clustering arises when chains cannot move and are bound to a cluster. Measuring mobility provides insights into the clustering properties of the system.
 
 ### Locking Phenomena
 
 Before estimating mobility under different conditions, it's necessary to analyze the phenomena of locking, which can be of two kinds: mutual locking and self-locking.
 
 - **Mutual Locking:** Occurs when two chains block each other's heads.
-- **Self-Locking:** A locked state occurs when a single chain turns on itself, blocking all nearest neighbors of its head (Figure \ref{fig:self_locking}). This can only occur for chain lengths > 7.
+- **Self-Locking:** A locked state occurs when a single chain turns on itself, blocking all nearest neighbors of its head. This can only occur for chain lengths > 7.
 
 These configurations are trap states; once the chains get into this configuration, they can never change, permanently decreasing mobility for future time steps.
 
@@ -41,6 +36,7 @@ These configurations are trap states; once the chains get into this configuratio
 
    <img src="https://github.com/Isi2000/FCW/blob/main/images/self_blocking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/self_blocking.png" width="400" height="400" />
 </p>
+
 The quantity of interest for these simulations is the mobility after a long time $M_{\infty}$ as a function of the density $\rho$, defined as the number of spots occupied by chains over the total number of squares on the grid. $M_{\infty}$ measures how many particles are clustered during an indefinite evolution of the system.
 
 ### Analytical Expressions for Mobility
