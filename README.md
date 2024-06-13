@@ -39,7 +39,7 @@ These configurations are trap states; once the chains get into this configuratio
 <p align="center">
    <img src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" width="400" height="400" />
 
-   <img src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" width="400" height="400" />
+   <img src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/self_blocking.png" width="400" height="400" />
 </p>
 The quantity of interest for these simulations is the mobility after a long time $M_{\infty}$ as a function of the density $\rho$, defined as the number of spots occupied by chains over the total number of squares on the grid. $M_{\infty}$ measures how many particles are clustered during an indefinite evolution of the system.
 
