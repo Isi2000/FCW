@@ -25,7 +25,7 @@ The FCW model consists of a series of connected particles (chains) moving on a g
 
 ### Key Concepts
 
-- **Mobility ($M(t)$):** The ratio of chains able to move at time $t$. $M(\bar{t}) = 1$ for a time step $\bar{t}$ means that each chain has at least one free spot near it and will perform a step. Clustering arises when chains cannot move and are bound to a cluster. Measuring mobility provides insights into the clustering properties of the system.
+- **Mobility M(t):** The ratio of chains able to move at time $t$. $M(\bar{t}) = 1$ for a time step $\bar{t}$ means that each chain has at least one free spot near it and will perform a step. Clustering arises when chains cannot move and are bound to a cluster. Measuring mobility provides insights into the clustering properties of the system.
 
 ### Locking Phenomena
 
@@ -36,22 +36,11 @@ Before estimating mobility under different conditions, it's necessary to analyze
 
 These configurations are trap states; once the chains get into this configuration, they can never change, permanently decreasing mobility for future time steps.
 
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}{0.3\textwidth}
-\includegraphics[width=\linewidth]{images/mutual_locking.png}
-\caption{Mutual Locking}
-\label{fig:mutual_locking}
-\end{subfigure}
-\begin{subfigure}{0.3\textwidth}
-\includegraphics[width=\linewidth]{images/self_locking.png}
-\caption{Self Locking}
-\label{fig:self_locking}
-\end{subfigure}
-\caption{Illustrations of locking phenomena in the flexible chain-like walker model.}
-\label{fig:lock}
-\end{figure}
+<p align="center">
+   <img src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" width="400" height="400" />
 
+   <img src="https://github.com/Isi2000/FCW/blob/main/images/self_locking.png" data-canonical-src="https://github.com/Isi2000/FCW/blob/main/images/mutual_locking.png" width="400" height="400" />
+</p>
 The quantity of interest for these simulations is the mobility after a long time $M_{\infty}$ as a function of the density $\rho$, defined as the number of spots occupied by chains over the total number of squares on the grid. $M_{\infty}$ measures how many particles are clustered during an indefinite evolution of the system.
 
 ### Analytical Expressions for Mobility
